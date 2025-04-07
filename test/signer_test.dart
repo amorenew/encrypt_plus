@@ -1,5 +1,5 @@
-import 'package:encrypt_plus/encrypt_plus.dart';
-import 'package:encrypt_plus/encrypt_io.dart';
+import 'package:encrypter_plus/encrypter_plus.dart';
+import 'package:encrypter_plus/encrypt_io.dart';
 import 'package:pointycastle/export.dart' hide Signer hide RSASigner;
 import 'package:test/test.dart';
 

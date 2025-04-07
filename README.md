@@ -1,10 +1,10 @@
-# encrypt_plus
+# encrypter_plus
 
-[![Pub Package](https://img.shields.io/pub/v/encrypt.svg)](https://pub.dartlang.org/packages/encrypt_plus)
-[![Dart CI](https://github.com/amorenew/_plus_/actions/workflows/dart.yaml/badge.svg)](https://github.com/amorenew/encrypt_plus/actions/workflows/dart.yaml)
+[![Pub Package](https://img.shields.io/pub/v/encrypt.svg)](https://pub.dartlang.org/packages/encrypter_plus)
+[![Dart CI](https://github.com/amorenew/encrypter_plus/actions/workflows/dart.yaml/badge.svg)](https://github.com/amorenew/encrypter_plus/actions/workflows/dart.yaml)
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4F45BFVMFVQW)
 
-A set of high-level APIs over pointycastle (<https://github.com/amorenew/encrypt_plus->) for two-way cryptography. A fork of encrypt (<https://github.com/leocavalcante/encrypt>).
+A set of high-level APIs over pointycastle (<https://github.com/amorenew/encrypter_plus->) for two-way cryptography. A fork of encrypt (<https://github.com/leocavalcante/encrypt>).
 
 > Looking for password hashing? Please, visit [password](https://github.com/leocavalcante/password-dart).
 
@@ -12,10 +12,10 @@ A set of high-level APIs over pointycastle (<https://github.com/amorenew/encrypt
 
 You can generate cryptographically secure random keys and IVs for you project.
 
-Activate the encrypt_plus package:
+Activate the encrypter_plus package:
 
 ```bash
-pub global activate encrypt_plus
+pub global activate encrypter_plus
 ```
 
 Then use the `secure-random` command-line tool:
@@ -57,7 +57,7 @@ Current status is:
 #### AES
 
 ```dart
-import 'package:encrypt_plus/encrypt_plus.dart';
+import 'package:encrypter_plus/encrypter_plus.dart';
 
 void main() {
   final plainText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
@@ -103,7 +103,7 @@ final encrypter = Encrypter(AES(key, mode: AESMode.cbc, padding: null));
 #### Salsa20
 
 ```dart
-import 'package:encrypt_plus/encrypt_plus.dart';
+import 'package:encrypter_plus/encrypter_plus.dart';
 
 void main() {
   final plainText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
@@ -122,7 +122,7 @@ void main() {
 #### [Fernet](https://github.com/fernet/spec/blob/master/Spec.md)
 
 ```dart
-import 'package:encrypt_plus/encrypt_plus.dart';
+import 'package:encrypter_plus/encrypter_plus.dart';
 import 'dart:convert';
 
 void main() {
@@ -149,7 +149,7 @@ void main() {
 
 ```dart
 import 'dart:io';
-import 'package:encrypt_plus/encrypt_plus.dart';
+import 'package:encrypter_plus/encrypter_plus.dart';
 import 'package:pointycastle/asymmetric/api.dart';
 
 void main() {

@@ -1,4 +1,4 @@
-part of encrypt_plus;
+part of '../encrypter_plus.dart';
 
 class SecureRandom {
   static final Random _generator = Random.secure();

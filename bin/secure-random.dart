@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:args/args.dart';
-import 'package:encrypt_plus/encrypt_plus.dart';
+import 'package:encrypter_plus/encrypter_plus.dart';
 
 void main(List<String> args) {
   final argParser = ArgParser();

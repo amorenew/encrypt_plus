@@ -1,4 +1,4 @@
-part of encrypt_plus;
+part of '../../encrypter_plus.dart';
 
 // Abstract class for encryption and signing.
 abstract class AbstractRSA {

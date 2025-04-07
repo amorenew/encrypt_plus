@@ -1,4 +1,4 @@
-part of encrypt_plus;
+part of '../encrypter_plus.dart';
 
 Uint8List decodeHexString(String input) {
   assert(input.length % 2 == 0, 'Input needs to be an even length.');
