@@ -1,4 +1,4 @@
-part of encrypt;
+part of encrypt_plus;
 
 /// Wraps the AES Algorithm.
 class AES implements Algorithm {

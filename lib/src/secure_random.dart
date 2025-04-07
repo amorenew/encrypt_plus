@@ -1,4 +1,4 @@
-part of encrypt;
+part of encrypt_plus;
 
 class SecureRandom {
   static final Random _generator = Random.secure();

@@ -1,4 +1,4 @@
-part of encrypt;
+part of encrypt_plus;
 
 /// Wraps the Fernet Algorithm.
 class Fernet implements Algorithm {
@@ -79,9 +79,9 @@ class Fernet implements Algorithm {
       //  overloading problem -we'll all be dead when it overflows
       //  (max int of double/millseconds in year
       //   =9007199254740991 / 3.154e+10 = 285580 years from 1970)
-      final int hi=bdata.getUint32(0, Endian.big);
-      final int low=bdata.getUint32(4, Endian.big);
-      return (hi<<32|low);
+      final int hi = bdata.getUint32(0, Endian.big);
+      final int low = bdata.getUint32(4, Endian.big);
+      return (hi << 32 | low);
     }
   }
 
@@ -106,8 +106,8 @@ class Fernet implements Algorithm {
       bdata.setUint64(0, currentTime, Endian.big);
     } catch (_) {
       // in dart2js there is no setUint64(), so fall back and improvise.
-      final int hi=(currentTime>>32)&0xffffffff;
-      final int low=currentTime&0xffffffff;
+      final int hi = (currentTime >> 32) & 0xffffffff;
+      final int low = currentTime & 0xffffffff;
       bdata.setUint32(0, hi, Endian.big);
       bdata.setUint32(4, low, Endian.big);
     }

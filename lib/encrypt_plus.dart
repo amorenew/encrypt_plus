@@ -1,4 +1,4 @@
-library encrypt;
+library encrypt_plus;
 
 import 'dart:convert' as convert;
 import 'dart:math';

@@ -1,4 +1,4 @@
-import 'package:encrypt/encrypt.dart';
+import 'package:encrypt_plus/encrypt_plus.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -9,8 +9,8 @@ void main() {
 
       expect(
           Encrypted.fromBase64(encoded),
-          equals(
-            encrypter.encrypt('Text to encrypt 😀', iv: IV.allZerosOfLength(16))));
+          equals(encrypter.encrypt('Text to encrypt 😀',
+              iv: IV.allZerosOfLength(16))));
     });
   });
 }

@@ -1,4 +1,4 @@
-part of encrypt;
+part of encrypt_plus;
 
 // Abstract class for encryption and signing.
 abstract class AbstractRSA {
@@ -21,7 +21,7 @@ abstract class AbstractRSA {
           RSAEngine(),
         );
       case RSADigest.SHA1:
-      default:
+        // default:
         return OAEPEncoding.withSHA1(RSAEngine());
     }
   }

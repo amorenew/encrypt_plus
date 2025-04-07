@@ -1,4 +1,4 @@
-part of encrypt;
+part of encrypt_plus;
 
 /// Interface for the Algorithms.
 abstract class Algorithm {
